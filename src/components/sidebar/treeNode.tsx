@@ -13,7 +13,7 @@ import Link from '../link'
 const List = styled.ul`
   list-style: none;
   padding: 0;
-  margin: ${theme.space[12]} 0 ${theme.space[24]};
+  margin:10px 0 20px;
   &.has-border {
     border-left: 2px solid ${theme.colors.gray[300]};
     margin-left: -${theme.space[12]};
