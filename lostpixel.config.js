@@ -7,7 +7,7 @@ module.exports = {
   lostPixelProjectId: 'cllqhxvmz0jzjjj0eabfs6jxg',
   apiKey: process.env.LOST_PIXEL_API_KEY,
   compareConcurrency: 10,
-  shotConcurrency: 2,
+  shotConcurrency: 10,
   threshold: 10,
   flakynessRetries: 2,
   beforeScreenshot: async (page) => {
