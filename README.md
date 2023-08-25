@@ -14,7 +14,7 @@ New contributors are welcome! Read through the [contributing guide](CONTRIBUTING
 2. Install [`libvips`](https://github.com/libvips/libvips) via homebrew.
 
    ```
-   brew install libvips
+   brew install libvipsd
    ```
 
 ## Run the docs site locally -
