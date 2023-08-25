@@ -47,7 +47,8 @@ exports.onPostBuild = async ({ graphql, pathPrefix, basePath = pathPrefix }, plu
       if (
         excludedPaths.includes(edge.node.path) ||
         longPages.includes(edge.node.path) ||
-        errorPages.includes(edge.node.path)
+        errorPages.includes(edge.node.path) ||
+        !edge.node.path.includes('guides')
       )
         return null
       // Allow headless browser to render super long pages before screenshoting them
