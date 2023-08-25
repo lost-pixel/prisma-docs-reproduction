@@ -9,6 +9,7 @@ module.exports = {
   compareConcurrency: 10,
   shotConcurrency: 2,
   threshold: 10,
+  flakynessRetries: 2,
   beforeScreenshot: async (page) => {
     await page.addStyleTag({
       content: `iframe {
