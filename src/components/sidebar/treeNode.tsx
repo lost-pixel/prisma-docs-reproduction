@@ -22,7 +22,7 @@ const List = styled.ul`
 
 const ListItem = styled.li`
   font-size: ${theme.fontSizes[14]};
-  line-height: 1.25;
+  line-height: 1;
   margin-bottom: ${theme.space[12]};
   position: relative;
   a {
