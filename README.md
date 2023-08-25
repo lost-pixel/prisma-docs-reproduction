@@ -17,7 +17,7 @@ New contributors are welcome! Read through the [contributing guide](CONTRIBUTING
    brew install libvips
    ```
 
-## Run the docs site locally
+## Run the docs site locally -
 
 1. Clone this repository.
 2. On your computer, open a terminal window in the repository's directory.
