@@ -88,6 +88,7 @@ const ListItem = styled.li`
       }
     }
   }
+  //! styles below are not contributing to the sidebar flakiness
   /* .active-item {
     color: ${theme.colors.blue[600]} !important;
     font-weight: 700;
