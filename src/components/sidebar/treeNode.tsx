@@ -11,13 +11,13 @@ import { urlGenerator } from '../../utils/urlGenerator'
 import Link from '../link'
 
 const List = styled.ul`
-  /* list-style: none;
+  list-style: none;
   padding: 0;
   margin:10px 0 20px;
   &.has-border {
     border-left: 2px solid ${theme.colors.gray[300]};
     margin-left: -${theme.space[12]};
-  } */
+  }
 `
 
 const ListItem = styled.li`
