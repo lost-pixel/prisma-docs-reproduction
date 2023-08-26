@@ -26,13 +26,14 @@ const ListItem = styled.li`
   margin-bottom: ${theme.space[12]};
   position: relative;
   a {
-    transition: color 150ms ease 0s;
-    color: ${theme.colors.gray[600]} !important;
+    /* transition: color 150ms ease 0s;
+    color: ${theme.colors.gray[600]} !important; */
+    color: gray;
     text-decoration: none;
     vertical-align: middle;
-    &:hover {
+    /* &:hover {
       color: ${theme.colors.gray[900]} !important;
-    }
+    } */
 
     .tag {
       position: absolute;
