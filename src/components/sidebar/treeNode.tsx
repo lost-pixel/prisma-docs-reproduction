@@ -25,7 +25,7 @@ const ListItem = styled.li`
   line-height: 1;
   margin-bottom: ${theme.space[12]};
   position: relative;
-  a {
+  /* a {
     transition: color 150ms ease 0s;
     color: ${theme.colors.gray[600]} !important;
     text-decoration: none;
@@ -87,7 +87,7 @@ const ListItem = styled.li`
         outline: none;
       }
     }
-  }
+  } */
   //! styles below are not contributing to the sidebar flakiness
   /* .active-item {
     color: ${theme.colors.blue[600]} !important;
