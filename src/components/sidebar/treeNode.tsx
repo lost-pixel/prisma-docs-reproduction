@@ -26,14 +26,13 @@ const ListItem = styled.li`
   margin-bottom: ${theme.space[12]};
   position: relative;
   a {
-    /* transition: color 150ms ease 0s;
-    color: ${theme.colors.gray[600]} !important; */
-    color: gray;
+    transition: color 150ms ease 0s;
+    color: ${theme.colors.gray[600]} !important;
     text-decoration: none;
     /* vertical-align: middle; */
-    /* &:hover {
+    &:hover {
       color: ${theme.colors.gray[900]} !important;
-    } */
+    }
 
     .tag {
       position: absolute;
@@ -89,8 +88,7 @@ const ListItem = styled.li`
       }
     }
   }
-  //! styles below are not contributing to the sidebar flakiness
-  /* .active-item {
+  .active-item {
     color: ${theme.colors.blue[600]} !important;
     font-weight: 700;
   }
@@ -126,9 +124,17 @@ const ListItem = styled.li`
   &.last-level {
     padding-left: ${theme.space[24]};
 
-   .last-level {
-     padding-left: ${theme.space[16]};
-   } */
+     .last-level {
+       /*this one is last for real*/
+       padding-left: ${theme.space[16]};
+     }
+  }
+  .collapse-title {
+    position: relative;
+    cursor: pointer;
+    svg {
+      transition: transform 0.2s ease;
+    }
   }
 `
 
@@ -276,120 +282,3 @@ const TreeNode = ({
 export default TreeNode
 
 
-// const ListItem = styled.li`
-//   font-size: ${theme.fontSizes[14]};
-//   line-height: 1;
-//   margin-bottom: ${theme.space[12]};
-//   position: relative;
-//   a {
-//     transition: color 150ms ease 0s;
-//     color: ${theme.colors.gray[600]} !important;
-//     text-decoration: none;
-//     vertical-align: middle;
-//     &:hover {
-//       color: ${theme.colors.gray[900]} !important;
-//     }
-
-//     .tag {
-//       position: absolute;
-//       right: 0;
-//       color: ${theme.colors.gray[500]};
-//       font-size: ${theme.fontSizes[14]};
-//       font-style: normal;
-//       font-weight: 600;
-//       background: ${theme.colors.gray[200]};
-//       border-radius: ${theme.radii.small};
-//       padding: 2px 5px;
-//       text-transform: capitalize;
-//       &.small {
-//         font-size: 12px;
-//       }
-//     }
-
-//     .item-collapser {
-//       background: transparent;
-//       position: absolute;
-//       left: -15px;
-//       top: 7px;
-//       padding: 0;
-//       border: 0;
-
-//       .right,
-//       .down {
-//         transition: opacity 0.5s linear;
-//       }
-
-//       .right.open,
-//       .down.close {
-//         display: none;
-//         opacity: 0;
-//       }
-
-//       .right.close,
-//       .down.open {
-//         display: block;
-//         opacity: 1;
-//         position: absolute;
-//         margin-top: -4px;
-//       }
-
-//       .down.open {
-//         margin-top: -2px;
-//       }
-
-//       &:hover,
-//       &:focus,
-//       &:active {
-//         outline: none;
-//       }
-//     }
-//   }
-//   .active-item {
-//     color: ${theme.colors.blue[600]} !important;
-//     font-weight: 700;
-//   }
-//   &.top-level {
-//     margin-top: ${theme.space[32]};
-//     > a {
-//       font-size: 1.125rem;
-//       color: ${theme.colors.gray[900]} !important;
-//       font-weight: 600;
-//       letter-spacing: -0.01em;
-//     }
-//     > ul {
-//       margin-top: ${theme.space[12]};
-//     }
-//   }
-//   &.bottom-level {
-//     margin-left: ${theme.space[20]};
-//   }
-//   &.static-link {
-//     margin-top: ${theme.space[20]};
-//   }
-//   &.static-link > a {
-//     color: ${theme.colors.gray[900]} !important;
-//     text-transform: uppercase;
-//     font-weight: bold;
-//     font-size: ${theme.fontSizes[12]};
-//     line-height: ${theme.space[14]};
-//     letter-spacing: 0.02em;
-//     &:hover {
-//       color: ${theme.colors.gray[900]} !important;
-//     }
-//   }
-//   &.last-level {
-//     padding-left: ${theme.space[24]};
-
-//     // .last-level {
-//     //   /*this one is last for real*/
-//     //   padding-left: ${theme.space[16]};
-//     // }
-//   }
-//   .collapse-title {
-//     position: relative;
-//     cursor: pointer;
-//     svg {
-//       transition: transform 0.2s ease;
-//     }
-//   }
-// `
