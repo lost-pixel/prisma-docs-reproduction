@@ -30,7 +30,7 @@ const ListItem = styled.li`
     color: ${theme.colors.gray[600]} !important; */
     color: gray;
     text-decoration: none;
-    vertical-align: middle;
+    /* vertical-align: middle; */
     /* &:hover {
       color: ${theme.colors.gray[900]} !important;
     } */
